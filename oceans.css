@@ -1,0 +1,96 @@
+h1 {
+    Color: White;
+    font-size: 3em;
+    text-align: center;
+}
+
+body {
+    background-color: #57a7f1;
+    text-align: center;
+    font-family: Calibri;
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+}
+
+header {
+    color: #ffffff;
+    font-size: 1.25em;
+}
+ #SOO {
+     padding: 0px;
+     margin-top: 0px;
+ }
+
+#mission {
+    color: #ffffff;
+    font-size: 1.15em;
+    padding: 1px;
+    margin-left: 12em;
+    margin-right: 12em;
+}
+
+#SOOmission {
+    text-decoration: underline;
+}
+
+
+/* Ocean Images, Flex in HTML */
+img.oceanleft { 
+    z-index: -1;
+}
+img.oceanright { 
+    text-align: right;
+    display: block;
+    margin-right: 0em;
+}
+
+main {
+    text-align: left;
+    color: white;
+    border: 5px #ffffff solid;
+    padding: 10px;
+    margin-left: 20em;
+    margin-right: 20em;
+    margin-top: 2em;
+    border-radius: 2mm;
+    line-height: 1.5em;
+
+}
+
+/*sidebar nav */
+.sidenav {
+    height: 300px;
+    width: 180px; /* Set the width of the sidebar */
+    padding: .15em;
+    font-family: calibri;
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color:#57a7f1;; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 1em;
+    margin-top: 15em;
+    margin-bottom: 15em;
+    margin-left: .35em;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    line-height: 4em;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 1.25em;
+    font-weight: 500;
+    color: #ffffff;
+    display: block;
+    line-height: 3em;
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
