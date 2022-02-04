@@ -1,0 +1,26 @@
+
+
+.navbar {
+    background-color: rgb(11, 38, 194);
+}
+
+h1 {
+    color: white;
+    margin: 1rem;
+}
+
+body {
+
+    background-color: rgba(201, 201, 193, 0.76);
+}
+
+.form-inline {
+    position: relative;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+
+

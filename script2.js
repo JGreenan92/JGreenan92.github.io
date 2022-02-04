@@ -1,0 +1,63 @@
+window.addEventListener('load', (event) => {
+    console.log('page is fully loaded');
+    const api_key = "XhIHTkEpMJW1XVzlVjJRbQJCaNXyDpVZ"
+
+    const showSearchResults = (data => {
+        console.log('the data fro the API is', data)
+
+
+
+        //loop over data/items
+        //grab the video id from the item
+        //once you grab the video id and console log it out
+        //use the iframe code above to embed the video id in it
+        //once you have a bunch of iframe share codes for the result videos
+        //update the UI with iframe share codes
+
+
+    })
+
+    const fecthDataFromGiphy = (searchStr) => {
+
+        let url = `https://api.giphy.com/v1/gifs/search?api_key=${api_key}&limit=20&part=snippet&q=${searchStr}&limit=15`
+
+        console.log('the url is', url)
+
+        fetch(url)
+            .then((res) => {
+                return res.json()
+            }).then((data) => {
+
+
+                //show info to user
+
+                showSearchResults(data)
+
+            })
+
+
+
+    }
+
+    document.getElementById('enter').addEventListener('click', (event) => {
+        console.log('the button was clicked')
+
+        // allows search entry to communicate to console
+
+        let searchStr = document.getElementById('search-box').value
+
+        console.log('the search string is', searchStr)
+
+        fecthDataFromGiphy(searchStr)
+
+    })
+
+
+
+})
+
+
+    //const apiKey = 'XhIHTkEpMJW1XVzlVjJRbQJCaNXyDpVZ';
+
+    //const searchURL = https://www.api.giphy.com/v1/gifs/search?key=XhIHTkEpMJW1XVzlVjJRbQJCaNXyDpVZ&part=snippet&q=${searchStr}
+
