@@ -6,7 +6,6 @@ window.addEventListener('load', (event) => {
         console.log('the data fro the API is', data)
 
 
-
         //loop over data/items
         //grab the video id from the item
         //once you grab the video id and console log it out
@@ -27,12 +26,10 @@ window.addEventListener('load', (event) => {
             .then((res) => {
                 return res.json()
             }).then((data) => {
-
-
-                //show info to user
-
-                showSearchResults(data)
-
+                for (i = 0; i < data.data.length; i++) {
+                    var img = '<img height="200" widhth = "200" src="' + data.data[i].images.downsized_large.url + '"/>'
+                    document.getElementById('giphy-image').innerHTML += img;
+                }
             })
 
 
