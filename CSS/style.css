@@ -9,6 +9,11 @@ h1 {
     margin: 1rem;
 }
 
+.nav-bar-item {
+    margin-top: 27px;
+    margin-left: 27px;
+}
+
 body {
 
     background-color: rgba(201, 201, 193, 0.76);
@@ -36,5 +41,8 @@ margin-left: 200px;
 
 }
 
+@media (max-width: 320px)
+{
 
+}
 
