@@ -21,9 +21,19 @@ body {
     align-items: stretch;
     width: 100%;
 }
+
+
 img{
     height: 300px;
     width: 300px;
+    
+    
+}
+
+#giphy-image {
+margin: 100px;
+margin-left: 200px;
+
 }
 
 

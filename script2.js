@@ -27,7 +27,7 @@ window.addEventListener('load', (event) => {
                 return res.json()
             }).then((data) => {
                 for (i = 0; i < data.data.length; i++) {
-                    var img = '<img height="200" widhth = "200" src="' + data.data[i].images.downsized_large.url + '"/>'
+                    var img = '<img height="300" widhth = "300" src="' + data.data[i].images.downsized_large.url + '"/>'
                     document.getElementById('giphy-image').innerHTML += img;
                 }
             })
