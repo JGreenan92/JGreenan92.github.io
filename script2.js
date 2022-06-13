@@ -49,6 +49,24 @@ window.addEventListener('load', (event) => {
 
     })
 
+    // Make Enter button on Keyboard select Enter/Search function on website
+
+    let searchBox = document.getElementById("search-box");
+
+    searchBox.addEventListener("keydown", e => {
+        if (e.key === 'Enter') {
+            console.log("Enter is pressed");
+
+            let searchStr = document.getElementById('search-box').value
+
+            console.log('the search string is', searchStr)
+
+            fecthDataFromGiphy(searchStr)
+        }
+    })
+
+
+
 
 
 })
