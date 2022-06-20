@@ -1,17 +1,19 @@
 
-
 .navbar {
     background-color: rgb(11, 38, 194);
+    font-family: 'Roboto', san-serif;
 }
 
 h1 {
     color: white;
     margin: 1rem;
+    font-family: 'Roboto', san-serif;
 }
 
 .nav-bar-item {
     margin-top: 27px;
     margin-left: 27px;
+    font-family: 'Roboto', san-serif;
 }
 
 body {
@@ -31,18 +33,29 @@ body {
 img{
     height: 300px;
     width: 300px;
-    
-    
+    padding: 20px;
+    margin-top: 40px;
 }
 
 #giphy-image {
-margin: 100px;
-margin-left: 200px;
+display: grid;
+grid-template:33%;
+grid-template-columns: auto;
+
+
+
 
 }
 
-@media (max-width: 320px)
-{
+@media screen and (max-width: 320px) {
+
+#giphy-image {
+    margin-right: 200px;
+
 
 }
+}
+    
+
+
 
