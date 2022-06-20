@@ -38,13 +38,8 @@ img{
 }
 
 #giphy-image {
-display: grid;
-grid-template:33%;
-grid-template-columns: auto;
-
-
-
-
+    margin: 100px;
+    margin-left: 200px;
 }
 
 @media screen and (max-width: 320px) {
